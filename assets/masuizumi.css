@@ -1,0 +1,4 @@
+@import url("futakuchi.css");
+:root{--futakuchi-ink:#24365b;--futakuchi-deep:#24365b;--futakuchi-teal:#4267a9;--futakuchi-mint:#e8effb;--futakuchi-steam:#f6f3ec;--futakuchi-warm:#be7743;--futakuchi-warm-soft:#f6e7da}
+.two-course{display:grid;grid-template-columns:1fr 1fr;gap:24px}.course{padding:32px;border-radius:14px;background:#fff;border:1px solid var(--pds-border)}.course--short{border-top:8px solid var(--futakuchi-warm)}.course h3{font:900 30px/1.4 var(--pds-font-ui);margin:8px 0}.course strong{color:var(--futakuchi-teal)}
+@media(max-width:620px){.two-course{grid-template-columns:1fr}}
