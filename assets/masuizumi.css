@@ -1,4 +1,69 @@
 @import url("futakuchi.css");
 :root{--futakuchi-ink:#24365b;--futakuchi-deep:#24365b;--futakuchi-teal:#4267a9;--futakuchi-mint:#e8effb;--futakuchi-steam:#f6f3ec;--futakuchi-warm:#be7743;--futakuchi-warm-soft:#f6e7da}
 .two-course{display:grid;grid-template-columns:1fr 1fr;gap:24px}.course{padding:32px;border-radius:14px;background:#fff;border:1px solid var(--pds-border)}.course--short{border-top:8px solid var(--futakuchi-warm)}.course h3{font:900 30px/1.4 var(--pds-font-ui);margin:8px 0}.course strong{color:var(--futakuchi-teal)}
-@media(max-width:620px){.two-course{grid-template-columns:1fr}}
+.hero-photo--landscape{aspect-ratio:4/3}
+.hero-photo--landscape img{object-position:center}
+
+.masuizumi-life{background:#fff}
+.life-mosaic{display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:repeat(2,280px);gap:16px}
+.life-photo{position:relative;margin:0;border-radius:14px;overflow:hidden;background:var(--pds-bg);box-shadow:0 20px 48px rgba(36,54,91,.12)}
+.life-photo--wide{grid-row:1/3}
+.life-photo img{object-position:center}
+.life-photo figcaption{position:absolute;inset:auto 0 0;padding:72px 24px 20px;background:linear-gradient(transparent,rgba(20,23,43,.9));color:#fff;display:grid;gap:4px}
+.life-photo figcaption strong{font:900 24px/1.4 var(--pds-font-ui)}
+.life-photo figcaption span{font-weight:700;line-height:1.65}
+.image-disclaimer{margin:16px 0 0;color:var(--pds-text-sub);font-size:16px;font-weight:700}
+
+.bath-visual--portrait img{object-position:center 48%}
+.visit-section{background:var(--futakuchi-mint)}
+.visit-section--compact{padding-block:64px}
+.visit-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.visit-photo{height:390px;margin:0;border-radius:14px;overflow:hidden;box-shadow:0 20px 48px rgba(36,54,91,.14)}
+.visit-photo img{object-position:center 52%}
+.visit-layout h2{font:900 clamp(32px,4vw,46px)/1.4 var(--pds-font-ui);margin:8px 0 16px;color:var(--futakuchi-ink)}
+.phone--dark{display:inline-block;margin-top:16px;color:var(--futakuchi-ink)}
+
+.practical-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.practical-hero-grid>*{min-width:0}
+.practical-hero-photo{height:360px;margin:0;border-radius:14px;overflow:hidden;position:relative;box-shadow:0 20px 48px rgba(36,54,91,.14)}
+.practical-hero-photo img{object-position:center}
+.practical-hero-photo figcaption{position:absolute;right:16px;bottom:16px;padding:8px 12px;border-radius:8px;background:rgba(20,23,43,.82);color:#fff;font-size:16px;font-weight:700}
+.practical-hero-grid .quick-facts{grid-column:1/-1;margin-top:0}
+.facility-photo-grid--masuizumi .facility-photo:first-child img{object-position:center}
+.facility-photo-grid--masuizumi .facility-photo:nth-child(2) img{object-position:center 35%}
+.facility-photo-grid--masuizumi .facility-photo:nth-child(3) img{object-position:center 56%}
+
+.pamphlet-note{max-width:620px;color:#fff;font-weight:700}
+.pamphlet-price-section{background:#fff}
+.pamphlet-price-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.price-card{padding:32px;border:2px solid var(--futakuchi-teal);border-radius:14px;background:#fff}
+.price-card--primary{background:var(--futakuchi-mint)}
+.price-card h3{margin:0 0 20px;font:900 26px/1.45 var(--pds-font-ui);color:var(--futakuchi-ink)}
+.price-card table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.price-card th,.price-card td{padding:10px 12px;border-bottom:1px solid var(--pds-border);text-align:left;font-weight:700}
+.price-card th:last-child,.price-card td:last-child{text-align:right;font-weight:900}
+.price-card thead th{background:var(--futakuchi-deep);color:#fff}
+.price-footnote{margin:24px 0 0;padding:20px 24px;border-radius:12px;background:var(--pds-warning-bg);color:#5e410f;font-weight:700}
+.price-footnote strong{font-size:22px}
+
+@media(max-width:900px){
+  .life-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:420px 320px}
+  .life-photo--wide{grid-column:1/-1;grid-row:auto}
+  .visit-layout,.practical-hero-grid{grid-template-columns:1fr}
+  .practical-hero-photo{height:440px}
+  .practical-hero-grid .quick-facts{grid-column:auto}
+}
+
+@media(max-width:620px){
+  .two-course{grid-template-columns:1fr}
+  .course{padding:24px}
+  .life-mosaic{grid-template-columns:1fr;grid-template-rows:none}
+  .life-photo,.life-photo--wide{height:300px;grid-column:auto}
+  .life-photo figcaption{padding:64px 20px 18px}
+  .life-photo figcaption strong{font-size:22px}
+  .visit-photo,.practical-hero-photo{height:280px}
+  .visit-layout{gap:28px}
+  .facility-photo-grid--masuizumi .facility-photo{height:300px}
+  .pamphlet-price-grid{grid-template-columns:1fr}
+  .price-card{padding:24px}
+}
