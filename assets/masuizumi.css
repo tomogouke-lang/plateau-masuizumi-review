@@ -34,6 +34,17 @@
 .facility-photo-grid--masuizumi .facility-photo:nth-child(3) img{object-position:center 56%}
 
 .pamphlet-note{max-width:620px;color:#fff;font-weight:700}
+.pamphlet-final-section{background:#fff;padding-block:72px}
+.pamphlet-sheet-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.pamphlet-sheet{margin:0;border:1px solid var(--pds-border);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 18px 44px rgba(36,54,91,.12)}
+.pamphlet-sheet a{display:block;background:#eef1f8}
+.pamphlet-sheet img{display:block;width:100%;height:auto}
+.pamphlet-sheet figcaption{display:flex;align-items:baseline;gap:12px;padding:18px 20px;color:var(--futakuchi-ink)}
+.pamphlet-sheet figcaption strong{font:900 24px/1.4 var(--pds-font-ui)}
+.pamphlet-sheet figcaption span{font-weight:700;color:var(--pds-text-sub)}
+.pamphlet-download-wrap{margin-top:32px;padding:24px;border-radius:14px;background:var(--futakuchi-mint);text-align:center}
+.pamphlet-download{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:12px 28px;border-radius:999px;background:#3335bb;color:#fff;font:900 20px/1.4 var(--pds-font-ui);text-decoration:none}
+.pamphlet-download-wrap p{margin:14px 0 0;font-weight:700;color:var(--pds-text-sub)}
 .pamphlet-price-section{background:#fff}
 .pamphlet-price-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .price-card{padding:32px;border:2px solid var(--futakuchi-teal);border-radius:14px;background:#fff}
@@ -64,6 +75,9 @@
   .visit-photo,.practical-hero-photo{height:280px}
   .visit-layout{gap:28px}
   .facility-photo-grid--masuizumi .facility-photo{height:300px}
+  .pamphlet-final-section{padding-block:48px}
+  .pamphlet-sheet-grid{grid-template-columns:1fr}
+  .pamphlet-sheet figcaption{align-items:flex-start;flex-direction:column;gap:2px}
   .pamphlet-price-grid{grid-template-columns:1fr}
   .price-card{padding:24px}
 }
