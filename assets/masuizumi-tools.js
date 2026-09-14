@@ -32,7 +32,7 @@
         if(!rows.length) return fail();
         body.innerHTML=rows.map(row=>`<tr><th scope="row">${esc(row.day)}</th><td><span class="status ${statusClass(String(row.facility))}">${esc(row.facility||"要確認")}</span></td><td><span class="status ${statusClass(String(row.bath))}">${esc(row.bath||"要確認")}</span></td></tr>`).join("");
         settled=true;
-        message.textContent="二口店の入力表から最新情報を表示しています。見学・利用開始時はお電話でもご確認ください。";
+        message.textContent="増泉店の入力表から最新情報を表示しています。見学・利用開始時はお電話でもご確認ください。";
         message.className="availability-message";
       }catch(error){fail();}
     };
