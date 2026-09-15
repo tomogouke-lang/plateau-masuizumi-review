@@ -3,6 +3,8 @@
 .two-course{display:grid;grid-template-columns:1fr 1fr;gap:24px}.course{padding:32px;border-radius:14px;background:#fff;border:1px solid var(--pds-border)}.course--short{border-top:8px solid var(--futakuchi-warm)}.course h3{font:900 30px/1.4 var(--pds-font-ui);margin:8px 0}.course strong{color:var(--futakuchi-teal)}
 .hero-photo--landscape{aspect-ratio:4/3}
 .hero-photo--landscape img{object-position:center}
+.hero .hero-caremanager-link{background:transparent;color:#fff;border-color:rgba(255,255,255,.8)}
+.hero .hero-caremanager-link:hover,.hero .hero-caremanager-link:focus-visible{background:#fff;color:var(--futakuchi-deep)}
 
 .masuizumi-life{background:#fff}
 .life-mosaic{display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:repeat(2,280px);gap:16px}
